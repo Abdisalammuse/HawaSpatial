@@ -41,3 +41,5 @@ Remotes:
     url::https://inla.r-inla-download.org/R/stable/src/contrib/INLA_24.06.27.tar.gz
 RoxygenNote: 7.3.3
 Config/golem/ignored: [ "deploy/" ]
+URL: https://github.com/Abdisalammuse/HawaSpatial
+BugReports: https://github.com/Abdisalammuse/HawaSpatial/issues
