@@ -1,0 +1,36 @@
+# HawaSpatial Pro <img src="man/figures/logo.png" align="right" height="139" />
+
+### Health & Areal Weighted Analysis (HAWA) Platform
+**Developed by: Abdisalam Hassan Muse (PhD)**  
+**Affiliation: Amoud University / Global Development Intelligence**
+
+---
+
+## Overview
+
+**HawaSpatial Pro** is a professional-grade, multi-sectoral R package designed to bridge the gap between complex Bayesian spatial modeling and actionable policy insights. It provides a robust framework for sub-national monitoring of development indicators, specifically optimized for large-scale household surveys such as **DHS (USAID)**, **MICS (UNICEF)**, and **IHBS (World Bank)**.
+
+The platform is engineered to support the monitoring of the **United Nations Sustainable Development Goals (SDGs)** by identifying geographic "Hot Spots" and "Cold Spots" through advanced computational statistics.
+
+## Key Features
+
+*   **16 ESDA Methods:** Including Global/Local Moran's I, LISA Cluster Maps, Getis-Ord Gi*, and EBS Smoothing.
+*   **Bivariate Spatial Analysis:** Visualize the relationship between two indicators (e.g., Wealth vs. Health) using 3x3 color grids.
+*   **Advanced Geostatistics:** Ordinary Kriging for surface interpolation and Spatial Lag Model (SAR) residuals.
+*   **Bayesian Multilevel Modeling:** 4-Stage modeling (Null, Individual, Community, and Full) using **INLA** (Integrated Nested Laplace Approximations).
+*   **Bayesian Spatial Random Effects:** Map unexplained cluster-level variation aggregated to regional levels.
+*   **Automated Reporting:** Export publication-ready reports in Word, PDF, or HTML.
+
+## Installation
+
+You can install the development version of HawaSpatial from [GitHub](https://github.com/Abdisalammuse/HawaSpatial) with:
+
+```r
+# Install remotes if not already installed
+if (!require("remotes")) install.packages("remotes")
+
+# Install INLA (Required dependency not on CRAN)
+install.packages("INLA", repos = c(getOption("repos"), INLA = "https://inla.r-inla-download.org/R/stable"), dep = TRUE)
+
+# Install HawaSpatial Pro
+remotes::install_github("Abdisalammuse/HawaSpatial")
