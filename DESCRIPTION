@@ -1,24 +1,25 @@
 Package: HawaSpatial
 Title: Holistic and Areal Weighted Analysis for Global Development
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     person(given = "Abdisalam Hassan",
            family = "Muse",
            role = c("aut", "cre"),
            email = "abdisalam.hassan@amoud.edu.so",
            comment = c(ORCID = "0000-0003-4905-0044"))
-Description: A professional-grade, multi-sectoral platform designed for 
+Description: Description: A professional-grade, multi-sectoral platform designed for 
     sub-national monitoring of global development indicators. Optimized 
-    for large-scale household surveys including DHS, MICS, MIS, IHBS, 
-    SPA, and LSMS, the package provides a comprehensive workflow covering 
-    Descriptive, Diagnostic, Predictive, and Prescriptive analytics. Key 
-    functionalities include a 'Spatial Equalizer' for seamless data 
-    integration, 17 Exploratory Spatial Data Analysis (ESDA) methods, 
-    Small Area Estimation (SAE) via Fay-Herriot models, Spatial 
-    Econometrics (SAR/SEM), and 4-stage hierarchical multilevel modeling 
-    using the 'glmmTMB' engine. It enables researchers and policymakers 
-    to identify geographic hotspots, quantify spatial inequality (SDG 10), 
-    and generate publication-ready reports.
+    for large-scale household surveys including 'DHS', 'MICS', 'MIS', 
+    'IHBS', 'SPA', and 'LSMS', the package provides a comprehensive 
+    workflow covering Descriptive, Diagnostic, Predictive, and 
+    Prescriptive analytics. Key functionalities include a 'Spatial 
+    Equalizer' for seamless data integration, 17 Exploratory Spatial 
+    Data Analysis ('ESDA') methods, Small Area Estimation ('SAE') via 
+    'Fay-Herriot' models, Spatial Econometrics ('SAR'/'SEM'), and 4-stage 
+    hierarchical multilevel modeling using the 'glmmTMB' engine. It 
+    enables researchers and policymakers to identify geographic 
+    'hotspots', quantify spatial inequality ('SDG' 10), and generate 
+    publication-ready reports.
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
@@ -61,6 +62,7 @@ Imports:
     viridis
 URL: https://github.com/Abdisalammuse/HawaSpatial
 BugReports: https://github.com/Abdisalammuse/HawaSpatial/issues
-Suggests: 
-    knitr
 VignetteBuilder: knitr
+Suggests: 
+    knitr,
+    rmarkdown

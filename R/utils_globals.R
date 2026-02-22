@@ -4,7 +4,7 @@ utils::globalVariables(c(
   "eblup", "cv_direct", "cv_eblup", "wgt_f", "se", "se_design", "dv_num",
   "wgt", "eb_rate", "quantile_cat", "x", "lag_outcome", "quadrant",
   "lisa_quadrant", "gi_z", "Coverage_Class", "Hinge", "P_Value", "Lag",
-  "Morans_I", "Significance", "Regime", "gap", "lag_bin", "var1.pred",
+  "Morans_I", "Moran_I", "Significance", "Regime", "gap", "lag_bin", "var1.pred",
   "resids", "time_var", "Significant", "outcome_max", "outcome_min",
   "change", "percent_change", "lisa_min", "lisa_max", "Transition",
   "estimate", "conf.low", "conf.high", "stars", "term", "formatted",
@@ -14,4 +14,3 @@ utils::globalVariables(c(
   "multinomial", "geom_errorbarh", "geom_bar", "ylim", "ranef",
   "golem_add_external_resources", "callout", "renderInfoBox"
 ))
-
