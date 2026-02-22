@@ -1,13 +1,13 @@
 Package: HawaSpatial
 Title: Holistic and Areal Weighted Analysis for Global Development
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: 
     person(given = "Abdisalam Hassan",
            family = "Muse",
            role = c("aut", "cre"),
            email = "abdisalam.hassan@amoud.edu.so",
            comment = c(ORCID = "0000-0003-4905-0044"))
-Description: Description: A professional-grade, multi-sectoral platform designed for 
+Description: A professional-grade, multi-'sectoral' platform designed for 
     sub-national monitoring of global development indicators. Optimized 
     for large-scale household surveys including 'DHS', 'MICS', 'MIS', 
     'IHBS', 'SPA', and 'LSMS', the package provides a comprehensive 
@@ -64,5 +64,4 @@ URL: https://github.com/Abdisalammuse/HawaSpatial
 BugReports: https://github.com/Abdisalammuse/HawaSpatial/issues
 VignetteBuilder: knitr
 Suggests: 
-    knitr,
-    rmarkdown
+    knitr
