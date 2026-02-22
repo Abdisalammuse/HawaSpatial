@@ -9,5 +9,9 @@ utils::globalVariables(c(
   "change", "percent_change", "lisa_min", "lisa_max", "Transition",
   "estimate", "conf.low", "conf.high", "stars", "term", "formatted",
   "Model", "Region_Name", "intercept_re", "mean_random_effect",
-  "Variable", "Component", "Value", "w", "n_w", "percent", "bi_class", ":="
+  "Variable", "Component", "Value", "w", "n_w", "percent", "bi_class",
+  ":=", "lm.RStests", "scale_x_continuous", "full_join", "cumulative",
+  "multinomial", "geom_errorbarh", "geom_bar", "ylim", "ranef",
+  "golem_add_external_resources", "callout", "renderInfoBox"
 ))
+

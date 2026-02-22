@@ -61,3 +61,6 @@ Imports:
     viridis
 URL: https://github.com/Abdisalammuse/HawaSpatial
 BugReports: https://github.com/Abdisalammuse/HawaSpatial/issues
+Suggests: 
+    knitr
+VignetteBuilder: knitr

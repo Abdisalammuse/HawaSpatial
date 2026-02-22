@@ -1,0 +1,69 @@
+---
+title: "Sub-national Analysis with HawaSpatial Pro"
+author: "Abdisalam Hassan Muse (PhD)"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Sub-national Analysis with HawaSpatial Pro}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Introduction
+
+**HawaSpatial Pro** (Holistic & Areal Weighted Analysis) is a professional-grade, multi-sectoral platform designed to bridge the gap between complex spatial modeling and actionable policy insights. It provides a robust framework for sub-national monitoring of development indicators, specifically optimized for large-scale household surveys such as the Demographic and Health Surveys (DHS), Multiple Indicator Cluster Surveys (MICS), and Integrated Household Budget Surveys (IHBS).
+
+The package is structured around four pillars of data science:
+1. **Descriptive Analytics:** Establishing baselines and measuring geographic concentration (Gini/Theil).
+2. **Diagnostic Analytics:** Identifying hotspots via 17 ESDA methods and spatiotemporal dynamics.
+3. **Predictive Modeling:** Stabilizing sub-national estimates using Small Area Estimation (SAE) and Multilevel Modeling (GLMM).
+4. **Prescriptive Analytics:** Identifying SDG target gaps and generating formal technical reports.
+
+# Getting Started
+
+## Data Requirements
+
+To utilize the full power of HawaSpatial, users typically require:
+* A standard survey dataset (.dta, .sav, or .csv).
+* A corresponding administrative shapefile (Admin1 or Admin2).
+* The **Spatial Equalizer** module within the app will automatically handle naming inconsistencies between these two sources.
+
+## Launching the Application
+
+The primary way to interact with the HawaSpatial engine is through its interactive dashboard. To launch the application, use the following command:
+
+```{r setup, eval=FALSE}
+library(HawaSpatial)
+
+# Launch the interactive dashboard
+run_app()
+```
+
+# Core Modules
+
+### 1. The Spatial Equalizer
+The platform solves the common "naming mismatch" problem between survey data and GIS boundaries. It uses a smart-matching logic to join survey statistics to spatial geometries automatically.
+
+### 2. 4-Stage Hierarchical Modeling
+HawaSpatial implements a formal 4-stage multilevel modeling workflow (Null, Individual, Community, and Full models) using the `glmmTMB` engine. It automatically calculates the Intraclass Correlation (ICC) and Proportional Change in Variance (PCV).
+
+### 3. Small Area Estimation (SAE)
+For regions with small sample sizes, the package provides Fay-Herriot area-level models to produce stabilized Empirical Best Linear Unbiased Predictors (EBLUPs), ensuring that sub-national policy decisions are based on statistically sound estimates.
+
+### 4. Automated Reporting
+One of the key features for researchers is the ability to export formal, publication-ready side-by-side comparison tables and comprehensive technical reports in Word, PDF, or HTML formats.
+
+# Citation
+
+If you use this package in your research, please cite it as:
+
+> Muse, A. H. (2026). HawaSpatial: Holistic and Areal Weighted Analysis for Global Development (Version 0.1.1). Zenodo. https://doi.org/10.5281/zenodo.18290101
+
+---
