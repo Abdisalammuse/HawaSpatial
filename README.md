@@ -13,3 +13,28 @@ Muse, A. H. (2026). HawaSpatial: Holistic and Areal Weighted Analysis for Global
   doi = {10.5281/zenodo.18290101},
   url = {https://doi.org/10.5281/zenodo.18290101}
 }
+
+
+
+# HawaSpatial Pro <img src="man/figures/logo.png" align="right" height="139" />
+
+<!-- badges: start -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18290101.svg)](https://doi.org/10.5281/zenodo.18290101)
+[![CRAN status](https://www.r-pkg.org/badges/version/HawaSpatial)](https://CRAN.R-project.org/package=HawaSpatial)
+<!-- badges: end -->
+
+HawaSpatial Pro is a professional-grade, multi-sectoral platform designed for sub-national monitoring of global development indicators.
+
+## Installation
+
+You can install the development version of **HawaSpatial** from [GitHub](https://github.com/Abdisalammuse/HawaSpatial) with:
+
+```r
+# install.packages("devtools")
+devtools::install_github("Abdisalammuse/HawaSpatial")
+
+
+
+
+library(HawaSpatial)
+run_app()
