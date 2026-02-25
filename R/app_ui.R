@@ -321,3 +321,22 @@ app_ui <- function(request) {
     )
   )
 }
+#' Add external Resources to the Application
+#' @noRd
+golem_add_external_resources <- function() {
+  # Add golem:: prefix here
+  golem::add_resource_path(
+    "www",
+    app_sys("app/www")
+  )
+
+  tags$head(
+    # Add golem:: prefix here
+    golem::favicon(),
+    # Add golem:: prefix here
+    golem::bundle_resources(
+      path = app_sys("app/www"),
+      app_title = "HawaSpatial"
+    )
+  )
+}

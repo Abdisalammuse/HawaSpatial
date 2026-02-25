@@ -14,6 +14,7 @@
 #' @importFrom tidyselect where all_of
 #' @importFrom readr read_csv
 #' @import glmmTMB
+#' @import golem
 #' @import performance
 #' @import broom.mixed
 #' @import broom
