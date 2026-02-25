@@ -1,6 +1,6 @@
 Package: HawaSpatial
 Title: Holistic and Areal Weighted Analysis for Global Development
-Version: 0.1.2
+Version: 0.1.3
 Authors@R: 
     person(given = "Abdisalam Hassan",
            family = "Muse",
